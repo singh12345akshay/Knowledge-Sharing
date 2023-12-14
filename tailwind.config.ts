@@ -13,24 +13,27 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        current: "currentColor",
+        red: "#ffc82c",
+        primary: "#1fb6ff",
+        purple: "#7e5bef",
+        pink: "#ff49db",
+        orange: "#ff7849",
+        green: "#13ce66",
+        yellow: "#ffc82c",
+        grayDark: "#273444",
+        gray: "#8492a6",
+        grayLight: "#d3dce6",
+        white: "#FFFFFF",
+      },
     },
-    colors: {
-      primary: "#1fb6ff",
-      purple: "#7e5bef",
-      pink: "#ff49db",
-      orange: "#ff7849",
-      green: "#13ce66",
-      yellow: "#ffc82c",
-      grayDark: "#273444",
-      gray: "#8492a6",
-      grayLight: "#d3dce6",
-    },
+
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
   },
-
   plugins: [],
 };
 export default config;
