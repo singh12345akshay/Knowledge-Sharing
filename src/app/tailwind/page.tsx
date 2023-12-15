@@ -10,8 +10,8 @@ const page = () => {
           condition ? "bg-blue-300" : "bg-red"
         }  rounded-xl shadow-lg flex items-center space-x-4 hover:bg-green active:bg-grayLight mb-5`}
       >
-        <div>
-          <div className="text-xl font-medium text-black">ChitChat</div>
+        <div className='prose lg:prose-xl prose-headings:underline hover:prose-h2:prose-css-color'>
+          <div>ChitChat</div>
           <h2 >You have a new message!</h2>
         </div>
       </div>

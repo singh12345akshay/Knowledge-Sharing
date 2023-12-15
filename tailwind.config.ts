@@ -27,6 +27,18 @@ const config: Config = {
         grayLight: "#d3dce6",
         white: "#FFFFFF",
       },
+      typography: {
+        // Customizing prose styles
+        'prose': {
+          css: {
+            color: '#333', // Default text color
+            h2: {
+              color: 'red', // Custom heading color
+              fontSize: '2.5rem', // Custom heading font size
+            },
+            // Other customizations...
+          },
+        },
     },
 
     fontFamily: {
@@ -34,6 +46,10 @@ const config: Config = {
       serif: ["Merriweather", "serif"],
     },
   },
-  plugins: [],
-};
+    // plugins: [
+    //   require('@tailwindcss/typography'),
+    //   // other plugins...
+    // ],
+  },
+}
 export default config;
