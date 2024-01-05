@@ -1,4 +1,6 @@
-import React from 'react'
+"use client";
+import React from "react";
+import Image from "next/image";
 
 const page = () => {
   const items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
@@ -6,14 +8,41 @@ const page = () => {
   return (
     <>
       <div
-        className={`p-6 max-w-sm mx-auto ${
-          condition ? "bg-blue-300" : "bg-red"
-        }  rounded-xl shadow-lg flex items-center space-x-4 hover:bg-green active:bg-grayLight mb-5`}
+        className={`p-6 mx-auto rounded-xl shadow-lg items-center space-x-4`}
       >
-        <div className='prose lg:prose-xl prose-headings:underline hover:prose-h2:prose-css-color'>
+        <Image
+          alt=""
+          width={150}
+          height={150}
+          className="float-left"
+          src="https://www.pixelstalk.net/wp-content/uploads/images8/Merry-Christmas-2023-Wallpaper-HD.jpg"
+        />
+        <Image
+          alt=""
+          width={200}
+          height={200}
+          className="float-right"
+          src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Wallpapers-pexels-photo.jpg"
+        />
+        <p className="clear-end
+        ">
+          Maybe we can live without libraries, people like you and me. Maybe.
+          Sure, we're too old to change the world, but what about that kid,
+          sitting down, opening a book, right now, in a branch at the local
+          library and finding drawings of pee-pees and wee-wees on the Cat in
+          the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
+          Look. If you think this is about overdue fines and missing books,
+          you'd better think again. This is about that kid's right to read a
+          book without getting his mind warped! Or: maybe that turns you on,
+          Seinfeld; maybe that's how y'get your kicks. You and your good-time
+          buddies.
+        </p>
+        <p className="float-right">This is hdrfgh af giskfgskghsh 2 dkffgsrf</p>
+
+        {/* <div className='prose lg:prose-xl prose-headings:underline hover:prose-h2:prose-css-color'>
           <div>ChitChat</div>
           <h2 >You have a new message!</h2>
-        </div>
+        </div> */}
       </div>
       {/* <ul className="grid grid-cols-1 gap-4 mb-4">
         {items.map((item, index) => (
@@ -51,6 +80,6 @@ const page = () => {
 </form> */}
     </>
   );
-}
+};
 
-export default page
+export default page;
